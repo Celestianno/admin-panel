@@ -1,8 +1,7 @@
 const express = require("express");
 const path = require("path");
 const bodyParser = require("body-parser");
-const mainRoute = require("./routes/main");
-const gamesRouter = require("./routes/games");
+const { mainRoute, gamesRouter } = require("./routes");
 const { cors } = require("./middlewares");
 
 const PORT = 3000;
